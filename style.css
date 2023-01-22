@@ -1,0 +1,255 @@
+body{
+    background-color: #f3f5fc;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.logo {
+    padding-top: 60px;
+    padding-left: 60px;
+    width:80%;
+    }
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 80px;
+        }
+ 
+ .input {
+    background-color: #f3f5fc;
+    border:none;
+    color: rgb(231, 17, 88);
+    margin-top: 90px;
+    
+    width: 50%;
+    height: 30%;
+    margin-top: 40%; 
+    margin-left: 30%;
+    
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    text-transform: lowercase;
+ }      
+
+ ::placeholder { color: rgb(231, 17, 88); }
+    .input:focus {
+        outline: none;
+}
+
+.instrucción{
+                     
+    width: 35%;
+    height: 1%;
+    Opacity: 80%
+    
+    Font: "Inter";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    
+    color: #48085c;
+           
+    flex: none;
+    order: 1;
+    flex-grow: 0;    
+}    
+
+ .output{
+    background-color: #f3f5fc;
+    background-image:url(imagenes/muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    border: none;
+    color: rgb(231, 17, 88);
+
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    text-transform: lowercase;
+    text-align: center;
+    
+    margin-left: 40px;
+    margin-top: 60px;
+    padding-left: 65px;
+    padding-right: 65px;
+              
+    width: 65%;
+    height: 35%;
+    
+     }       
+.output:focus{
+        outline: none;
+    }
+
+.floating-label{
+   
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+       
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #48085c;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+               
+}
+.botones{
+    display:flex;
+    margin-top: 18px;
+       
+   }
+
+.en{
+    background: #48085c;
+    border:1px solid;
+    border-radius: 24px;
+    color:#f3f5fc;
+    cursor:pointer;
+    height: 67px;
+    width: 328px;
+    margin-right: 2em;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.des{
+    background: #bc052d;
+    border:1px solid;
+    border-radius: 24px;
+    color:#48085c;
+    cursor:pointer;
+    height: 67px;
+    width: 336px;
+    margin-right: 2em;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 20px;
+       
+}
+
+.copiar{
+    background: #1ca98f;
+    border:1px solid;
+    border-radius: 24px;
+    color:#f3f5fc;
+    cursor:pointer;
+    height: 67px;
+    width: 328px;
+    margin-right: 2em;
+    display:inline;
+    margin-left: 25%;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 20px;
+    } 
+.copyright{
+    
+    color:#f20a5f4a;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 900;
+    width: auto;
+    left: 30%;
+    top: 130%;
+    position: absolute;
+    padding: 0.5em;
+    text-align: center;
+    height: 5px;    
+}
+
+@media screen and (max-width:700px){
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content:right;
+        align-items: right;
+        align-content: right;
+}
+    .logo{
+    width: 200%;
+        
+}
+    .input{
+        margin-top: 70%;
+        width: 100%;
+        height: auto;
+        padding-bottom: 0%;
+        margin-right: 100%;
+        margin-bottom: auto;
+    }
+    .instrucción{
+        width: 90%;
+        height:auto;
+        margin-left: 35%;
+}
+    .output{
+        width: 100%;
+        background-image: none;    
+        height: auto;
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: auto;
+    }
+    .floating-label{
+        width: 100%;
+        height:auto;
+      
+}         
+    .botones{
+        margin-top: 2em;
+        width: 50%;
+        height: 50%;
+        display:column;
+        margin-left: 35%;
+          
+}
+        
+    .copyright{
+        
+        width: auto;
+        left: 0%;
+        top: 130%;
+        position: static;
+        text-align: center;
+        height: 5px;    
+} 
+}
