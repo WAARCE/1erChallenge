@@ -1,3 +1,8 @@
+var botonUno = document.querySelector("#en");
+var botonCopiar = document.querySelector("#copytext");
+var botonDos = document.querySelector("#des");
+
+
 function encriptar (){
     var correction = {
        "a": "ai",
@@ -11,6 +16,9 @@ function encriptar (){
    let result = text.replace (/a|e|i|o|u/gi, matched => correction[matched]);                                              
     document.getElementById("output").innerHTML = result;                                           
 }
+
+botonUno.onclick = encriptar;
+
 
 function desencriptar (){
     var correction = {
@@ -26,6 +34,8 @@ function desencriptar (){
     document.getElementById("input").innerHTML = result;                                           
 }
  
+botonDos.onclick = desencriptar;
+
 function copiar (){
    var copyText = document.getElementById("output");
    copyText.select();
@@ -33,3 +43,5 @@ function copiar (){
    navigator.clipboard.writeText(copyText.value);             
    //alert("Copied the text: " + copyText.value);                              }
 }
+
+botonCopiar.onclick = copiar;
